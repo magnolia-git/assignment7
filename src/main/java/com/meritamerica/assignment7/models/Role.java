@@ -9,6 +9,15 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+/* Roles
+ * 
+ * 		This lets us give users a role, or more than one.
+ * 
+ * 		Basic getters and setters implemented here.
+ * 
+ */
+
+
 @Entity
 @Table(name = "roles")
 public class Role {
@@ -19,13 +28,13 @@ public class Role {
 	
 	@Enumerated(EnumType.STRING)
 	@Column
-	private ERole name;
+	private ValidRoles name;
 	
 	public Role() {
 		
 	}
 	
-	public Role(ERole name) {
+	public Role(ValidRoles name) {
 		this.name = name;
 	}
 
@@ -37,11 +46,11 @@ public class Role {
 		this.id = id;
 	}
 
-	public ERole getName() {
+	public ValidRoles getName() {
 		return name;
 	}
 
-	public void setName(ERole name) {
+	public void setName(ValidRoles name) {
 		this.name = name;
 	}
 	

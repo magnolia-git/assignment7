@@ -10,6 +10,13 @@ import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
+/* My User Details
+ * 
+ * 		I'm not sure what's up with this one! It's almost
+ * 		like a duplicate of Users...
+ * 
+ */
+
 public class MyUserDetails implements UserDetails {
 	
 private static final long serialVersionUID = 1L;

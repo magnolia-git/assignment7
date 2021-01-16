@@ -17,6 +17,11 @@ import org.springframework.security.web.authentication.UsernamePasswordAuthentic
 
 import com.meritamerica.assignment7.services.MyUserDetailsService;
 
+/* Security Configurator
+ * 
+ * 		This is also from the Java Brains videos on YouTube.
+ */
+
 @EnableWebSecurity
 public class SecurityConfigurator extends WebSecurityConfigurerAdapter {
 	

@@ -12,6 +12,10 @@ import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
 
+/* JWT Token stuff
+ * 		Pulled from the Java Brains videos from YouTube
+ */
+
 @Service
 public class JwtUtil {
     private String SECRET_KEY = "secret";

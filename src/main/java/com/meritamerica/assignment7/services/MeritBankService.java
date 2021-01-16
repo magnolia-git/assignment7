@@ -16,6 +16,15 @@ import com.meritamerica.assignment7.repositories.*;
 import com.meritamerica.assignment7.models.*;
 import com.meritamerica.assignment7.security.*;
 
+/* Merit Bank Service
+ * 
+ * 		The repositories are instantiated with the service.
+ * 
+ * 		Methods for getting from and adding to the repositories
+ * 		can be found here. Since user accounts are added to repositories,
+ * 		some of the validation can be found here.
+ */
+
 @Service
 public class MeritBankService {
 
@@ -102,20 +111,20 @@ public class MeritBankService {
 		Set<Role> roles = new HashSet<>();
 
 		if (strRoles == null) {
-			Role userRole = roleRepo.findByName(ERole.AccountHolder)
+			Role userRole = roleRepo.findByName(ValidRoles.AccountHolder)
 					.orElseThrow(() -> new RuntimeException("Error: Role is not found."));
 			roles.add(userRole);
 		} else {
 			strRoles.forEach(role -> {
 				switch (role) {
 				case "admin":
-					Role adminRole = roleRepo.findByName(ERole.admin)
+					Role adminRole = roleRepo.findByName(ValidRoles.admin)
 							.orElseThrow(() -> new RuntimeException("Error: Role is not found."));
 					roles.add(adminRole);
 
 					break;
 				case "AccountHolder":
-					Role userRole = roleRepo.findByName(ERole.AccountHolder)
+					Role userRole = roleRepo.findByName(ValidRoles.AccountHolder)
 							.orElseThrow(() -> new RuntimeException("Error: Role is not found."));
 					roles.add(userRole);
 				}

@@ -3,6 +3,15 @@ package com.meritamerica.assignment7.security;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+/* Home Resource
+ * 
+ * 		This one is kind of optional. If you were to authenticate
+ * 		and view the root directory in a browser, you would see this
+ * 		page. If someone really wanted to, they could make the entire
+ * 		bank app usable through the browser.
+ * 
+ */
+
 @RestController
 public class HomeResource {
 	

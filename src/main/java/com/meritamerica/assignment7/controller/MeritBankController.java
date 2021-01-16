@@ -31,6 +31,12 @@ import com.meritamerica.assignment7.security.JwtUtil;
 import com.meritamerica.assignment7.services.MeritBankService;
 import com.meritamerica.assignment7.services.MyUserDetailsService;
 
+/* Merit Bank Controller
+ * 
+ * 		This is where GETs and POSTs are specified.
+ * 		You can set who has authority to what by
+ * 		using the roles.
+ */
 
 @RestController
 public class MeritBankController {

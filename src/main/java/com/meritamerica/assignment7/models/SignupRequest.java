@@ -4,6 +4,11 @@ import java.util.Set;
 
 import javax.validation.constraints.*;
 
+/* Sign-up request class
+ * 
+ * 		This holds the username, password, role, and active values when creating an account.
+ */
+
 public class SignupRequest {
     @NotBlank
     @Size(min = 3, max = 20)

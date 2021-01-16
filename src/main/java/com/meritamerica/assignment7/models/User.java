@@ -10,6 +10,19 @@ import org.springframework.security.core.GrantedAuthority;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
 
+/* User Information
+ * 
+ * 		This is where the user's information is specified.
+ * 		Like many of the other model classes, it has an id.
+ * 
+ * 		Other values are also specified, like the username,
+ * 		password, a list of roles, a boolean called active 
+ * 		(whether the account is usable or not), and an associated
+ * 		account holder.
+ * 
+ * 		Basic getters and setters have been implemented here.
+ */
+
 @Entity
 @Table(name="user_accounts")
 public class User {

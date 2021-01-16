@@ -17,6 +17,11 @@ import org.springframework.web.filter.OncePerRequestFilter;
 
 import com.meritamerica.assignment7.services.MyUserDetailsService;
 
+/* JWT token related stuff
+ * 
+ * 		From the Java Brains videos on YouTube
+ */
+
 @Component
 public class JwtRequestFilter extends OncePerRequestFilter {
 

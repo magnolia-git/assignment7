@@ -7,6 +7,15 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+/* Account Contact Information
+ * 
+ * 		This will hold contact information for the user accounts.
+ * 		It holds an id and phone number.
+ * 
+ * 		Basic getters and setters have been implemented here.
+ * 
+ */
+
 @Entity
 @Table(name = "AccountContact")
 public class AccountContact {
